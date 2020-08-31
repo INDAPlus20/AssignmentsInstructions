@@ -8,13 +8,13 @@ This repo is for storing plus group assignments that we can use in the INDA cour
 Haskell                             task-{2..6}
 Interpreter                         task-6
 Minecraft Mod                       task-7             (GRP)
-Make a game                         task-8              GRP
-                                    task-9
+                                    task-8              
+Make a game                         task-9              GRP
 ```
 
 ### DD1338:
 ```
-Make a script to play said game     task-10              GRP
+Make a script to play said game     task-10             GRP
 Merge Sort                          task-11
 Chat-bot                            task-12             GRP
 Language Week                       task-13
