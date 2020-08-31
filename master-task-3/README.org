@@ -1,0 +1,117 @@
+* Uppgifter
+** Heater (Statisk data)
+Denna uppgift ska visa på hur man kan jobba med enkel data i
+Haskell. Förslagsvis kan ni använda "Record" syntaxen i Haskell men
+det är inte ett måste.
+
+Skapa en ny fil som heter "Heater.hs" kom ihåg att det ska stå "module
+Heater where" längst upp i filen.
+
+*** Uppgift
+Denna uppgift kommer från med modifikationer "week-3" repot från den
+vanliga indan. Se uppgift 2.92 och 2.93.
+
+Ni ska skapa en ny datatyp vid namn "Heater" som innehåller ett fält
+vars typ är en Double. Ni ska göra en konstruktions funktion /
+konstant vid namn "defaultHeater" som inte tar några argument och ger
+tillbaka data av typen "Heater" som innehåller ett fält vars
+"temprature" är 15.0, förslagsvis sparat som en double.
+
+Eftersom det är rätt trevligt att se en text representation av datan
+se till att detta objekt har en instans av "Show".
+Ett exempel på hur detta kan se ut är:
+#+BEGIN_SRC haskell
+data MinFinaDatatyp = MinFinaDatatyp Int deriving (Show)
+#+END_SRC
+
+Ni ska definiera två funktioner vid namn "warmer" och "cooler" vars
+typ är "Heater -> Heater" som höjer respektive sänker temperaturen med
+5 grader.
+
+Modifiera nu Heater datan till att innehåller två till fält vars namn
+är maxTemp och minTemp av typen Double.
+
+defaultHeater ska nu även definiera en ursprunglig min och max. (t.ex
+-20.0, 30.0)
+
+Skapa även en ny funktion vid namn "makeHeater" som tar två doubles
+som input och ger tillbaka en heater. Denna ska skapa en Heater genom
+att använda defaultHeater och modifiera "maxTemp" och "minTemp" till
+respektive argument.
+
+Modifiera nu "warmer" och "colder" funktionen till att sätta
+temperaturen till mindre än max eller störe än min när de kalls på.
+
+Sist men inte minst skapa en "setIncrement" funktion som tar en
+temperatur och en heater och ger tillbaka en ny heater vars
+"increment" fält ska vara det nya incrementet.
+
+** Monoid
+Monoider är ett exempel på hur man kan göra abstraktioner för att
+hitta väldigt generella logiska strukturer.
+Här kommer ett exemepel på hur medelvärden är monoider.
+#+BEGIN_SRC haskell
+import Data.Monoid
+
+data Medelvärde = Medelvärde Double Double deriving (Show)
+
+fromMedelvärde (Medelvärde a 0) = 0
+fromMedelvärde (Medelvärde a b) = a / b
+
+instance Monoid Medelvärde where
+     mempty = Medelvärde 0 0
+     mappend (Medelvärde _ 0) a = a
+     mappend a (Medelvärde _ 0) = a
+     mappend (Medelvärde s1 n1) (Medelvärde s2 n2) =
+	  Medelvärde (s1 + s2) (n1 + n2)
+#+END_SRC
+
+Du ska nu definiera två monoid instanser för datatyperna addition och produkt
+för nummer. För att ge restriktioner för att en instans definitions
+algebraiska typ ska vara av en viss klass kan instans signaturen se ut
+på följande sätt:
+#+BEGIN_SRC haskell
+instance (Num a) => Monoid (Addition a) where
+#+END_SRC
+
+Börja med att skapa en ny fil med namn "MonoidFoo.hs" och definiera
+två datatyper vid namn "Addition" och "Produkt" dessa ska båda ta en
+typ parameter som definierar vilken typ den inehåller.
+
+Sen kan du definiera monoid instanserna. Kom ihåg att "id" elementet
+eller "mempty" för Additon är 0 och id för Produkt är 1.
+
+Har du gjort rätt kommer "additionTest" i exemplet under ha värdet 55
+och productTest ha värdet 120
+
+#+BEGIN_SRC haskell
+additionTest = mconcat (map Addition [1..10])
+productTest = mconcat (map Produkt [1..5])
+#+END_SRC
+
+Definitionen för monoider kan ni hitta här:
+https://hackage.haskell.org/package/base-4.10.0.0/docs/Data-Monoid.html
+
+* Frågor
+Skriv in svaret på detta i en fil som heter "README.md" i docs.
+
+**** Fråga 1
+För din Heater:
+Vad händer om "increment" är negativt? Vilka sätt kan vi lösa det på?
+
+**** Fråga 2
+När man pratar om klasser i Haskell är det lite annorlunda från
+definitionen i objekt orienterade språk och det kan vara lite
+förvirrande för de som kommer från en objekt orienterad bakgrund.  Men
+om du skulle förklara skillnaden för en intresserad främling som inte
+vet någonting om klasser i varken objektorienterade språk eller
+funktionella hur hade du gjort det då?
+
+**** Fråga 3
+Att generalisera data så som Haskell gör är inte alltid självklar i
+alla språk. Men i t.ex Java och C++ kan man göra det till en viss grad.
+Varför vill man kunna göra detta?
+
+**** Fråga 4
+Många saker är monoider när man tänker lite på det. Kan du komma på
+några exempel? På vilket sätt är de monoider?

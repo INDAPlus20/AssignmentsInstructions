@@ -1,0 +1,108 @@
+
+./Setup.hs,15
+main main1,2
+
+./app/Main.hs,440
+module Main Main1,2
+vertexShader vertexShader24,25
+fragmentShader fragmentShader25,26
+type Cell Cell27,28
+type Camera Camera28,29
+data State State32,33
+data State = StateState32,33
+             { cells cells33,34
+             , camera camera34,35
+instance instance37,38
+defaultState defaultState41,42
+update update43,44
+main main49,50
+main main50,51
+loadProgram loadProgram62,63
+loadProgram loadProgram63,64
+
+./src/Input/Events.hs,663
+module Input.Events Input.Events3,4
+data Event Event13,14
+data Event = QuitQuit13,14
+           | LeftArrowLeftArrow14,15
+           | RightArrowRightArrow15,16
+           | UpArrowUpArrow16,17
+           | DownArrowDownArrow17,18
+           | SpaceSpace18,19
+           | EnterEnter19,20
+           | CharPress CharPress20,21
+type EventChan EventChan26,27
+foldrEvents foldrEvents31,32
+foldrEvents foldrEvents32,33
+createEventListners createEventListners42,43
+createEventListners createEventListners43,44
+keyCallback keyCallback53,54
+keyCallback keyCallback60,61
+charCallback charCallback82,83
+charCallback charCallback83,84
+
+./src/Graphics/Shaders.hs,919
+module Graphics.Shaders Graphics.Shaders3,4
+data Program Program14,15
+data Program = ProgramProgram14,15
+               { glProgram glProgram15,16
+               , colorUniform colorUniform16,17
+               , positionUniform positionUniform17,18
+               , cameraUniform cameraUniform18,19
+               , aspectRatioUniform aspectRatioUniform19,20
+type Color Color25,26
+type Position Position26,27
+type Camera Camera27,28
+type AspectRatio AspectRatio28,29
+red red32,33
+red red33,34
+green green34,35
+green green35,36
+blue blue36,37
+blue blue37,38
+initDraw initDraw43,44
+initDraw initDraw44,45
+setCamera setCamera53,54
+setCamera setCamera54,55
+setAspectRatio setAspectRatio59,60
+setAspectRatio setAspectRatio60,61
+loadProgram loadProgram68,69
+loadProgram loadProgram69,70
+loadShaderProgram loadShaderProgram88,89
+loadShaderProgram loadShaderProgram89,90
+
+./src/Graphics/Init.hs,203
+module Graphics.Init Graphics.Init4,5
+makeBasicWindow makeBasicWindow16,17
+makeBasicWindow makeBasicWindow17,18
+disableCursor disableCursor28,29
+initGLFW initGLFW33,34
+initGLFW initGLFW34,35
+
+./src/Graphics/Cube.hs,448
+module Graphics.Cube(Graphics.Cube4,5
+data RenderData RenderData18,19
+data RenderData = RenderDataRenderData18,19
+                { program program19,20
+                , vao vao20,21
+initDraw initDraw25,26
+initDraw initDraw26,27
+draw draw34,35
+draw draw35,36
+initRenderData initRenderData43,44
+initRenderData initRenderData44,45
+vertices vertices73,74
+vertices vertices74,75
+indices indices85,86
+indices indices86,87
+
+./src/Program/Loop.hs,280
+module Program.Loop Program.Loop4,5
+class HasDrawData HasDrawData23,24
+class HasDrawData HasDrawData23,24
+  cubes cubes24,25
+  cameraPosition cameraPosition25,26
+runProgram runProgram30,31
+runProgram runProgram31,32
+mainLoop mainLoop46,47
+mainLoop mainLoop47,48

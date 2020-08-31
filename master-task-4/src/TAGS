@@ -1,0 +1,36 @@
+
+./Todo.hs,1176
+module Main Main4,5
+data Time Time17,18
+data Time = TimeTime17,18
+            { year year18,19
+            , month month19,20
+            , day day20,21
+            , hour hour21,22
+            , minute minute22,23
+type Title Title25,26
+type TodoList TodoList31,32
+data Event Event36,37
+data Event = Event Event36,37
+instance instance42,43
+data UserInput UserInput51,52
+data UserInput = AddEvent AddEvent51,52
+               | DeleteEventsTo DeleteEventsTo52,53
+               | ListEventsListEvents53,54
+data ExecutionResult ExecutionResult59,60
+data ExecutionResult = ExecutionError ExecutionError59,60
+                     | ExecutionOKExecutionOK60,61
+                     | ExecutionModified ExecutionModified61,62
+                     | ExecutionPrompt ExecutionPrompt62,63
+maybeGet maybeGet65,66
+maybeGet maybeGet66,67
+maybeToEither maybeToEither71,72
+maybeToEither maybeToEither72,73
+stringToTime stringToTime81,82
+stringToTime stringToTime82,83
+readCommand readCommand100,101
+readCommand readCommand101,102
+runCommand runCommand115,116
+runCommand runCommand116,117
+main main136,137
+main main137,138

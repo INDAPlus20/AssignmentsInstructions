@@ -1,0 +1,90 @@
+* Vecka 4
+Denna vecka handlar lite om att ni ska förså monader och IO och lite
+hur man kan göra program i haskell. I src finns det ett delvis
+färigbyggt program som du kan försöka kompilera med "ghc Todo.hs".
+Men kommer först att faila helt då det saknas den del. Se den
+uppgiften "listindexering".
+
+Det är viktigt att ni läser er på och förstår er på vad programmet
+gör. Jag kommer att fråga ut er under övningen om vad olika funktioner
+gör och hur de fungerar, ni får självklart diskutera med varandra
+eller med mig.
+
+Innan ni sätter igång bör ni ha läst fram till och med kappitel 12 i
+"learn you a haskell".
+
+* Uppgifter
+** Maybe a to a -> Maybe b
+För att förstå sig på vissa få delar av programmet måste man
+åtmistånde veta vad ">>=" operatorn kan göra och hur den fungerar.
+
+Testa att skriv in detta i ghci
+#+BEGIN_SRC haskell
+Just 5 >>= Just . (+5) >>= Just . (*10)
+#+END_SRC
+Som också kan skrivas som:
+#+BEGIN_SRC haskell
+Just 5 >>= (\ n -> Just (n + 5)) >>= (\ n -> Just (n*10))
+#+END_SRC
+Om du prövar att ersätta någting mellan ">>=" operatorerna med "const
+Nothing" kommer du se att resultatet alltid blir Nothing!
+
+Kan du förklara vad som händer här? I fallet för datatypen "Maybe" vad
+gör ">>=" operatorn?
+
+** Maybe a to Maybe b
+Det finns en till operator med symbolen ">>" och kan t.ex användas på
+följande sätt:
+#+BEGIN_SRC haskell
+Just 5 >> Just "Potatis"
+#+END_SRC
+Pröva att skriv in samma utryck i ghci fast med "Just 5" utbytt till
+nothing. Vad gör ">>" operatorn i detta fall?
+
+
+** Listindexering
+Att leta efter ett specifikt index i en lista är ett redan löst
+problem. Men för övningens skull ska du skriva en funktion som gör
+just detta. Denna funktion ska du skriva in i "Todo.hs" filen på
+lämpligt ställe då resten av programmet kräver att en sådan funktion
+Existerar.
+
+Definiera en funktion vid namn maybeGet som tar en lista av element
+och ett index som argument. Den ska antingen ge tillbaka elementet på
+det givna indexet eller ingenting ifall indexet inte finns.
+
+
+** Todolistor deluxe
+Om du har laggt till "maybeGet" funktionen i Todo ska det nu gå att
+kompilera programmet. Gör detta t.ex genom att skriva "ghc Todo.hs"
+du ska nu kunna lägga till element genom att göra t.ex
+#+BEGIN_SRC bash
+./Todo add "Vakna tidigt" "2017 09 23 06"
+./Todo add "Spela dota" "2017 09 23 08"
+./Todo add "Sluta spela dota" "2017 09 23 23 30"
+./Todo add "Sova" "2017 09 23 59"
+#+END_SRC
+Och lista dina inlagda events genom:
+#+BEGIN_SRC bash
+./Todo list
+#+END_SRC
+
+Versionen av Todo programmet som kommer med i repositoryt har just nu
+bara två fungerande funktionaliteter. Den kan lägga till
+events och lista upp alla events. Du ska nu lägga till lite fler
+funtioner i programmet. Det är viktigt att du följer samma design
+mönster som redan existerar.
+
+*** DeleteEventsTo
+Som du kan se i UserInput finns det redan "DeleteEventsTo Time"
+definierat. Din uppgift är nu att implementera dess funtionalitet.
+Detta ska görs genom att lägga till "delete-to" i case utrycken i
+readCommand. Samt lägga till ett case för "DeleteEventsTo" i
+runCommand.  Resultaten är att den ska ta bort alla events som har ett
+datum som är innan det givna datumet.
+
+*** Sökning
+Du ska nu få lägga till en funktion helt från grunden. Det ska vara en
+söknings funktion där användaren ska dunna skriva in en
+sträng. Funktionen ska lista alla events där input stängen är en del
+utav titeln på någon av de existerande eventen.

@@ -1,0 +1,51 @@
+* Uppgifter vecka två
+** Inlämning av uppgifter
+Lösningarna ska lämnas in genom att kopiera in den här mappen in i ert vanliga
+repo. Ta bort de filer som finns där från början.
+
+När jag rättar kommer jag att lämna ett issue med titeln 'pass' eller
+'komplettering' eller 'fail'. Om ni har fått pass är ni godkända. Om ni har en
+issue med titeln 'komplettering' kommer det att finna några saker jag vill att
+ni ändrar innan jag kan godkänna er. Vanligtvis skriver jag vad det är jag vill
+att ni ändrar i kommentarerna. När ni har utfört ändringarna så vill jag att ni
+svarar med en kommentar på det issuet.
+'Fail' förklarar nog sig självt.
+
+** Läsanvisningar
+Denna vecka ska ni läsa upp till kapitel 6 i online boken "learn you a haskell"
+http://learnyouahaskell.com
+
+
+** Koduppgifter
+Samt att ni ska lösa samtliga uppgifter i följande uppgift:
+https://kth.kattis.com/problems/kth.progp.warmup
+(Samarbeta gärna med andra i gruppen
+
+** Svar på frågor
+Jag vill även att ni skriver svar på följande frågor.
+
+1. Varför kan man skriva utryck så som detta i Haskell?
+#+BEGIN_SRC haskell
+let evenNumbers = [ 2 * n | n <- [1..]]
+print (take 1000000 evenNumbers)
+#+END_SRC
+
+2. Vad innebär rekursion?
+
+
+3. Varför fungerar följande funktion i språk så som haskell och inte i t.ex javascript
+#+BEGIN_SRC haskell
+sum :: Integral n, Num n => n -> n -> n
+sum s 0 = s
+sum s n = sum (s + n) (pred n)
+#+END_SRC
+
+#+BEGIN_SRC javascript
+function sum(s, n) {
+     if(n == 0){
+         return s;
+     } else{
+         return sum(s + n, n - 1);
+     }
+}
+#+END_SRC
