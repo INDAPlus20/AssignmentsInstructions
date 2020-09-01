@@ -48,7 +48,7 @@ Write your source code in `src`, where the `main` function is located in `src/ma
 
 This week, you're going to learn the basics of Rust by solving [Kattis](https://kth.kattis.com) problems. For each problem, create one Rust crate in `<your_name_Assignments/Week_2`.
 
-Solve the following three problems:
+Solve at least two of the following problems:
 - [Summera tal](https://kth.kattis.com/problems/kth.javap.sumsort)
 - [Avstånd till kanten](https://kth.kattis.com/problems/kth.javap.kant)
 - [Cyber-Clara och anmälningslistorna](https://kth.kattis.com/problems/kth.grupdat.anmalningslistorna)
