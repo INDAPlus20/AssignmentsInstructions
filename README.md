@@ -1,18 +1,18 @@
-# INDAPlusAssignments
-This repo is for storing plus group assignments that we can use in the INDA courses
+# INDA Plus Assignments
+This repo is for storing plus group assignments that we can use in the INDA courses.
 
-# Potential assignments:
 
-### DD1337:
+
+### DD1337 Programmering:
 ```
-Haskell                             task-{2..6}
+Haskell || Rust                     task-{2..6}
 Interpreter                         task-6
 Minecraft Mod                       task-7             (GRP)
-                                    task-8              
+Assembler                           task-8              
 Make a game                         task-9              GRP
 ```
 
-### DD1338:
+### DD1338 Algoritmer och Datastrukturer:
 ```
 Make a script to play said game     task-10             GRP
 Merge Sort                          task-11
