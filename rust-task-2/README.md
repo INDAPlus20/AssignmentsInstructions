@@ -10,21 +10,22 @@
 
 ### Set up your repository
 
-Your first assignments are turned in by uploading them to your `<your_name>_Assignments` repository under the `INDAPlus20` organisation. 
+Your first assignment is turned in by uploading your code to the repository created for that assignment under the `INDAPlus20` organisation. 
 
-The grade to an assigment is left in the form of an issue with "PASS", "COMPLEMENT", or "FAIL" in the title. In case of "COMPLEMENT", read the instructions on what to adjust down in the issue description. Leave a comment on the issue upon reupload of the assignment. "PASS" and "FAIL" are self explanatory. 
+The grade to an assigment is left in the form of an issue with "Pass", "Komplettering", or "Fail" in the title. In case of "Komplettering", read the instructions on what to adjust down in the issue description. Leave a comment on the issue upon reupload of the assignment. "Pass" and "Fail" are self explanatory. 
 
 1) Install [Git](https://git-scm.com/downloads).
-2) Clone your assigments repository.
-`git clone git@github.com:INDAPlus20/<your_name>_Assignments.git`
+2) Creating a repository called `<your_name>-task-2` under the `INDAPlus20` organization.
+3) Clone your assigment repository.
+`git clone git@github.com:INDAPlus20/<your_name>-task-2.git`
 
 ### Prepare for your assigment
 
-Your assinments are sorted into seperate directories in your repository. Create a directory for this week's assignment named `Week_2`. Under this directory you are going to create several Rust crates (term for applications or libraries).
+Your assinments are sorted into seperate repositories under the `INDAPlus20` organization. Create a repository for this week's assignment named according to the instructions above. In this repository you are going to create several Rust crates (term for applications or libraries).
 
 #### How to create a Rust application (_binary_) crate
 
-1) Navigate in your terminal or command prompt to `<your_name>_Assignments/Week_2`.
+1) Navigate in your terminal or command prompt to `<your_name>-task-2`.
 2) Create a new directory with an appropriate name.
 3) Navigate into your newly created root directory.
 4) Initialise your Rust crate.
@@ -46,7 +47,7 @@ Write your source code in `src`, where the `main` function is located in `src/ma
 
 ### Kattis problems
 
-This week, you're going to learn the basics of Rust by solving [Kattis](https://kth.kattis.com) problems. For each problem, create one Rust crate in `<your_name_Assignments/Week_2`.
+This week, you're going to learn the basics of Rust by solving [Kattis](https://kth.kattis.com) problems. For each problem, create one Rust crate in `<your_name>-task-1`.
 
 Solve at least two of the following problems:
 - [Summera tal](https://kth.kattis.com/problems/kth.javap.sumsort)
