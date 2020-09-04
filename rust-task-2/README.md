@@ -45,7 +45,7 @@ Write your source code in `src`, where the `main` function is located in `src/ma
 
 ### Kattis problems
 
-This week, you're going to learn the basics of Rust by solving [Kattis](https://kth.kattis.com) problems. For each problem, create one Rust crate in `<KTH_ID>_assignments/week_2`. Include a screenshot of your Kattis submission to prove solution. See `./minimal_scalar_product` for a Kattis solution example.
+This week, you're going to learn the basics of Rust by solving [Kattis](https://kth.kattis.com) problems. For each problem, create one Rust crate in `<KTH_ID>-task-2`. Include a screenshot of your Kattis submission to prove solution. See `./minimal_scalar_product` for a Kattis solution example.
 
 Solve at least two of the following problems:
 - [Summera tal](https://kth.kattis.com/problems/kth.javap.sumsort)
