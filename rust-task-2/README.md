@@ -10,7 +10,7 @@
 
 ### Prepare for your assigment
 
-Your first assignments are turned in by uploading them to a repository named `<KTH_ID>-task-2` under the `INDAPlus20` organisation. Be careful to get the spelling right.
+Your first assignment are turned in by uploading it to a repository named `<KTH_ID>-task-2` under the `INDAPlus20` organisation. Be careful to get the spelling right.
 
 The grade to an assigment is left in the form of an issue with "Pass", "Komplettering", or "Fail" in the title. In case of "Komplettering", read the instructions on what to adjust down in the issue description. Leave a comment on the issue upon reupload of the assignment. "Pass" and "Fail" are self explanatory. 
 
