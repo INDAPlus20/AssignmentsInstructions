@@ -6,7 +6,7 @@ Congratulation ettan! You are now a proved owner of a killer ass chess engine. I
 
 To write a front-end in Rust, we'll use the [Good Game Easily library (GGEZ)](https://ggez.rs/). For help, you're refeered to the library documentations with very good examples.
 
-Take inspiration from existing chess games or go crazy and make rustacular!
+Take inspiration from existing chess games or go crazy and make something rustacular!
 
 ### Prepare assignment
 
