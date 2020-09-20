@@ -28,4 +28,4 @@ chess_template = { git = "https://github.com/INDAPlus20/chess-template.git" }
 
 ### Grade
 
-To pass this assignment, write a GUI application which allows you to both play and replay chess. The *CATCH* is that you cannot use your own chess engine(!). Therefore, if your chess engine implementation differs from the specifications stated in the `rust-task-3` instructions, write your own API specifications in a README markdown file and push to your engine repository. 
+To pass this assignment, write a GUI application which allows you to both play and replay chess. The *CATCH* is that you cannot use your own chess engine(!). Therefore, if your chess engine implementation differs from the specifications stated in the `rust-task-3` instructions, write your own API specifications in a README markdown file and add it to your engine repository. 
