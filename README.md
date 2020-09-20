@@ -5,22 +5,22 @@ This repo is for storing plus group assignments that we can use in the INDA cour
 
 ### DD1337 Programmering:
 ```
-Haskell || Rust                     task-{2..6}
-Interpreter                         task-6
-Minecraft Mod                       task-7             (GRP)
+Haskell || Rust                     task-{2..7}
+C                                   task-7
 Assembler                           task-8              
-Make a game                         task-9              GRP
+Interpreter                         task-9
+Minecraft Mod                       task-10            (GRP)
 ```
 
 ### DD1338 Algoritmer och Datastrukturer:
 ```
-Make a script to play said game     task-10             GRP
-Merge Sort                          task-11
-Chat-bot                            task-12             GRP
-Language Week                       task-13
-Knowledge Transfer                  task-14 + task-15   GRP
-Cryptography                        task-16
-Knowledge Transfer + Back/Front-end task-17 + task-18   GRP
+Make a game                         task-11             GRP
+Make a script to play said game     task-12             GRP
+Merge Sort                          task-13
+Chat-bot                            task-14             GRP
+Language Week                       task-15
+Knowledge Transfer                  task-16 + task-17   GRP
+Cryptography                        task-18
 ```
 
 ## Kurslitteratur
