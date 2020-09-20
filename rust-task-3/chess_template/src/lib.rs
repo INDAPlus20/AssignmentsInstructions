@@ -94,6 +94,8 @@ mod tests {
 
         let game = Game::new();
 
+        println!("{:?}", game);
+
         assert_eq!(game.get_game_state(), GameState::InProgress);
     }
 }

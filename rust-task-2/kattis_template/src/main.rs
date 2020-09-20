@@ -16,7 +16,8 @@ fn main() {
     let mut lines = input
         .lock()
         .lines()
-        .map(|_line| _line.ok().unwrap().to_string());
+        .map(|_line| _line.ok().unwrap().to_string())
+        .collect::<Vec<String>>();
 
     /* add code here ... */
 
