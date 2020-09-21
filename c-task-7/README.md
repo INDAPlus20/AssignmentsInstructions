@@ -97,7 +97,7 @@ void someFunction(void (*f)(int), int milliseconds, int n) {
 Know the answer of the following question:
 - What does `someFunction` do?
 
-#### Data types is like whaaat?
+#### Data types are like whaaat?
 
 Observe the following function:
 
