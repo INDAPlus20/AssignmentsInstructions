@@ -33,7 +33,7 @@ int main()
     scanf("%s", text);              // parse input as a character array (string)
 
     /**
-     * fprintf writes to specifies stream, in this case to standard error output.
+     * fprintf writes to specified stream, in this case to standard error output.
      * 
      * see: https://www.tutorialspoint.com/c_standard_library/c_function_fprintf.htm
      */
