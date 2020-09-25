@@ -53,7 +53,13 @@ Solve at least two of the following problems:
 - [Cyber-Clara och anmälningslistorna](https://kth.kattis.com/problems/kth.grupdat.anmalningslistorna)
 - [A Different Problem](https://kth.kattis.com/problems/different)
 
-_(optional challenge)_ A example solution to the Kattis problem [Minimal Scalar Product](https://open.kattis.com/problems/minimumscalar) can be found in `./minimal_scalar_product`. This solution runs at 0.06s. See the [statistics](https://open.kattis.com/problems/minimumscalar/statistics) for the Rust language. As you can see, it's possible to solve this problem in much less time. Write your own solution, which may be based on the example solution, and which runs quicker than 0.06s.
+_(optional fun)_:
+- [Game Rank](https://open.kattis.com/problems/gamerank)
+- [Quantum](https://open.kattis.com/problems/quantum)
+
+_(optional challenge)_:
+- 6/10 of the entries on the [Cyber-Clara och anmälningslistorna statistics board](https://kth.kattis.com/problems/kth.grupdat.anmalningslistorna/statistics) for the fastest solutions in Rust are from last year's ++:group. **Take them down!**
+- A example solution to the Kattis problem [Minimal Scalar Product](https://open.kattis.com/problems/minimumscalar) can be found in `./minimal_scalar_product`. This solution runs at 0.06s. See the [statistics](https://open.kattis.com/problems/minimumscalar/statistics) for the Rust language. As you can see, it's possible to solve this problem in much less time. Write your own solution, which may be based on the example solution, and which runs quicker than 0.06s.
 
 ### Questions
 
