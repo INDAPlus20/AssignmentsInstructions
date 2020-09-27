@@ -63,6 +63,8 @@ _(optional challenge)_:
 
 ### Questions
 
+Be prepared to answer the following questions during the next övning.
+
 #### Method chaining
 
 Observe the following code:
