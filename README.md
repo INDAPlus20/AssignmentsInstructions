@@ -23,6 +23,12 @@ Knowledge Transfer                  task-16 + task-17   GRP
 Cryptography                        task-18
 ```
 
+### VT-2021 Suggestions
+```
+Raytracer
+Prolog interpreter
+```
+
 ## Kurslitteratur
 
 - **Haskell**: http://learnyouahaskell.com
