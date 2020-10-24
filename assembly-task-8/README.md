@@ -21,15 +21,11 @@ See `./hello-world` and `./input-output` for MIPS code examples.
 
 ### Higher level => Lower level
 
-> Note: If you choose to do the optional assignment below, you do not need to turn in multiplication separately, however, doing multiplication can help you figuring out faculty!
-
-Learn what it means to be a compiler by translating C to MIPS assembly instructions. Your task is to write a file `./high-to-low/multiplication.asm`, which contains the same algorithm and logic as in `./high-to-low/multiplication.c`. To clarify: you may only use the `add` instruction, not `mul` (or similar)!
-
-*(optional)* Write an application which, with the same multiplication logic as in `multipication.asm`, calculates a given faculty. 
+Learn what it means to be a compiler by translating C to MIPS assembly instructions. Your task is to write a file `./high-to-low/multiplication.asm`, which contains the same algorithm and logic as in `./high-to-low/multiplication.c`. To clarify: you may only use the `add` instruction, not `mul` (or similar).
 
 ### [Inbyggda System-mastern](https://www.kth.se/student/kurser/program/TEBSM/20212/arskurs1), här kommer jag!
 
-Show that no one can write single-chip logic as royally as you do! Write an application, which takes one integer as input and prints all prime numbers up to that integer. The prime number search algoritm must be an implementation of [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes). 
+Show that no one can write single-chip logic as royally as you do! Write an application, which takes one integer `1 < n <= 1000` as input and prints all prime numbers up to that integer. The prime number search algoritm must be an implementation of [Sieve of Eratosthenes](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes). 
 
 Place your solution file(s) inside the `./sieve` directory.
 
