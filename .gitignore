@@ -8,10 +8,6 @@
 /*/*/*.exe
 /*/*/*/*.exe
 
-# DEMOS
-/demo.rs
-/*/demo.rs
-
 # Unfinished
 rust-task-7/
 
@@ -20,3 +16,8 @@ rust-task-7/
 /*/Cargo.lock
 /*/*/Cargo.lock
 /*/*/*/Cargo.lock
+
+### Demos
+/demo.rs
+demo
+/*/demo.rs
