@@ -12,7 +12,7 @@ Denna vecka ska vi inte bara kompilera kod direkt utan ska använda vad
 som kallas för ett bygg verktyg det finns många sådana för olika språk
 men Haskells största sådant är ett verktyg som heter stack. Ni kan läsa
 mer om detaljerna för detta på denna länk:
-[](https://docs.haskellstack.org/en/stable/README/)
+[DOCS](https://docs.haskellstack.org/en/stable/README/)
 
 
 Men ni får en liten halvdålig crash course av mig!
@@ -50,7 +50,7 @@ har ett eget nichat område. Titta lite på hur jag har gjort.
 ### GLFW
 Detta projekt är beroende av ett bibliotek som heter GLFW och ni
 hittar deras hemsida här:
-[](http://www.glfw.org/)
+[GLFW](http://www.glfw.org/)
 
 Kortfattat är det ettbibliotek som gör det enkelt att öppna rutor och
 hantera input för olika operativsystem. (Cross platform ftw!)
@@ -90,7 +90,7 @@ piltangenterna.
 När ni känner er redo är det dags för att göra hela spelet. Förklaring
 för reglerna finns på många ställen men kan rekommendera:
 
-[](http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
+[WIKIPEDIA](http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
 ### Extra utmaning
 En första lösning brukar vara att man definierar en matris som ritas
@@ -99,4 +99,4 @@ storlek. Samt att koden för att uppdatera saker blir rätt
 knepig. Speciellt i Haskell. Men det finns rätt schyssta lösningar för
 båda dessa problemen! Kom ihåg att det finns många standard datatyper
 till hjälp i Haskells container bibliotek!
-[](http://hackage.haskell.org/package/containers-0.5.10.2)
+[HÄR!](http://hackage.haskell.org/package/containers-0.5.10.2)

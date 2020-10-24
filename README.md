@@ -23,6 +23,12 @@ Knowledge Transfer                  task-16 + task-17   GRP
 Cryptography                        task-18
 ```
 
+### VT-2021 Suggestions
+```
+Raytracer
+Prolog interpreter
+```
+
 ## Kurslitteratur
 
 - **Haskell**: http://learnyouahaskell.com
@@ -34,7 +40,7 @@ Read about good documentation and healthy code habits. Recommended for all progr
 
 ### The mighty G-drive
 
-> Somewhere far far away was a drive, a legendary drive. Tales claimes that even the fabled Ric himself has seen it. Heed, heed thee glory! For this plentiful store may bless us with its content.
+> Somewhere far far away was a drive, a legendary drive. Tales claims that even the fabled Ric himself has seen it. Heed, heed thee glory! For this plentiful store may bless us with its content.
 
 - **[DD1337 Programmering](https://drive.google.com/drive/u/0/folders/0BwaHnAYlcNWdfkFQdlNQQ29vSTUtNXV2RkJuWC1QSmZqWm4tZHlqTS03d1Z4N296MXpHUUU)**
 - **[DD1338 Algoritmer och datastrukturer](https://drive.google.com/drive/u/0/folders/0BwaHnAYlcNWdfmZPTi10VHo5VUlrQm1DZTc2WGdKNWI0eUxGZWJ4RnhyZ2M5WkRNSjhvQjA)**
