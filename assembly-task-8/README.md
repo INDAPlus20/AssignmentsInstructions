@@ -21,7 +21,7 @@ See `./examples` for MIPS code examples.
 
 ### Higher level => Lower level
 
-Learn what it means to be a compiler by translating C to MIPS assembly instructions. Your task is to write a file `./high-to-low/multiplication.asm`, which contains the same algorithm and logic as in `./high-to-low/multiplication.c`. To clarify: you may only use the `add` instruction, not `mul` (or similar).
+Learn what it means to be a compiler by translating C to MIPS assembly instructions. Your task is to write a file `./high-to-low/multiplication.asm`, which contains the same algorithms and logic as in `./high-to-low/multiplication.c`. To clarify: you may only use the `add` instruction, not `mul` (or similar).
 
 ### [Inbyggda System-mastern](https://www.kth.se/student/kurser/program/TEBSM/20212/arskurs1), här kommer jag!
 
