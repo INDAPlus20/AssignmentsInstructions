@@ -12,24 +12,21 @@
 #
 ##################################################################
 
-### Data Declaration Section ###
+main: 
+    # get input
+    li  $v0, 5                          # set system call code to "read integer"
+    syscall                             # read integer from standard input stream to $v0
 
-.data                               
+    # calculate output
+    mul $a0, $v0, $v0                   # $a0 = $v0 * $v0
 
-### Executable Code Section ###
+    # print output
+    li  $v0, 1                          # set system call code to "print integer"
+    syscall                             # print square of input integer to output stream
 
-.text
-
-# get input
-li $v0, 5                           # set system call code to "read integer"
-syscall                             # read integer from standard input stream to $v0
-
-# calculate output
-mul $a0, $v0, $v0                   # $a0 = $v0 * $v0
-
-# print output
-li $v0, 1                           # set system call code to "print integer"
-syscall                             # print square of input integer to output stream
-
-li $v0, 10                          # (10 == "Terminate Program")
-syscall                             # exit program
+##################################################################
+#
+#   NOTE:
+#       The Executable Code Section is the default section. Therefore ".text" isn't needed.
+#
+##################################################################

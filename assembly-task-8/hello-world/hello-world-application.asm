@@ -21,12 +21,15 @@ HW:     .asciiz "Hello World\n"     #define label HW as our hello world string
 
 .text
 
-li      $v0, 4                      # magic code to print string
-la      $a0, HW                     # load address of string HW into $a0
-syscall                             # HW now printed
+main:
+    # print HW
+    li      $v0, 4                  # magic code to print string
+    la      $a0, HW                 # load address of string HW into $a0
+    syscall                         # HW now printed
 
-li $v0, 10                          # set system call code to "terminate program"
-syscall                             # terminate program
+    # exit program
+    li $v0, 10                      # set system call code to "terminate program"
+    syscall                         # terminate program
 
 ##################################################################
 #
