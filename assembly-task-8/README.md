@@ -41,7 +41,7 @@ Know the answer to the following questions:
 - Why do array declarations in fast languages, like Rust and C, require the given length to be of constant value?
 - Why are Rust string literals constant?
 
-#### Memory flow
+#### CPU optimisations
 
 Observe the following pieces of code:
 ```
