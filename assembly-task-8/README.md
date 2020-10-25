@@ -17,7 +17,7 @@
 
 This week you're going to complete two subassignments. The first assignment is to translate a program written in C to MIPS assembly, and the second one is to write a specified application in MIPS assembly.
 
-See `./hello-world` and `./input-output` for MIPS code examples.
+See `./examples` for MIPS code examples.
 
 ### Higher level => Lower level
 
@@ -29,28 +29,44 @@ Show that no one can write single-chip logic as royally as you do! Write an appl
 
 Place your solution file(s) inside the `./sieve` directory.
 
-For help with code setup, begin by copying the contents of `./template.asm` into your main `.asm` file.
+For help with code setup, begin by reviewing the contents of `./sieve/template.asm`.
 
 ### Questions
 
-#### 
+#### Constant declarations
 
-Observe the following code:
+With reference to `./sieve/template.asm`,
 
+Know the answer of the following questions:
+- Why do array declarations in fast languages, like Rust and C, require the given length to be of constant value?
+- Why are Rust string literals constant?
+
+#### Memory flow
+
+Observe the following pieces of code:
 ```assembly
-# LISTDEFINITION
+main:
+    #...
+
+    # exit program
+    li $v0, 10                      # set system call code to "terminate program"
+    syscall                         # terminate program
+
+#...
+```
+```assembly
+main:
+    #...
+
+    # exit program
+    j  exit_program                 # jump to exit_program
+    nop
+
+#...
+
+exit_program:
+    # EOF
 ```
 
 Know the answer of the following question:
-- Why do array declarations in fast languages, like Rust and C, require the given length to be of constant value?
-
-
-
-```
-    move    $s7, $ra        # save return address
-
-    ### CODE ###
-
-    move    $ra, $s7        # restore $ra (not needed here)
-    jr      $ra             # return to where main was called from
-```
+- Which method of program termination is to prefer and why?
