@@ -37,14 +37,14 @@ For help with code setup, begin by reviewing the contents of `./sieve/template.a
 
 With reference to `./sieve/template.asm`,
 
-Know the answer of the following questions:
+Know the answer to the following questions:
 - Why do array declarations in fast languages, like Rust and C, require the given length to be of constant value?
 - Why are Rust string literals constant?
 
 #### Memory flow
 
 Observe the following pieces of code:
-```assembly
+```
 main:
     #...
 
@@ -54,7 +54,7 @@ main:
 
 #...
 ```
-```assembly
+```
 main:
     #...
 
@@ -68,5 +68,5 @@ exit_program:
     # EOF
 ```
 
-Know the answer of the following question:
+Know the answer to the following question:
 - Which method of program termination is to prefer and why?
