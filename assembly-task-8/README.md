@@ -39,7 +39,7 @@ With reference to `./sieve/template.asm`,
 
 Know the answer to the following questions:
 - Why do array declarations in fast languages, like Rust and C, require the given length to be of constant value?
-- Why are Rust string literals constant?
+- A single programming language can define strings in many different ways. For example, Rust has string literals and a String structure. What are the advantages of having both low- and high-level representations of strings? 
 
 #### CPU optimisations
 
@@ -52,7 +52,7 @@ main:
     li $v0, 10                      # set system call code to "terminate program"
     syscall                         # terminate program
 
-#...
+    #...
 ```
 ```
 main:

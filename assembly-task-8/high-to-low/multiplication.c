@@ -2,9 +2,9 @@
  * multiplication.c
  * - Reference file for subassignment "Lower level => Higher level"
  * 
- * Author: Tobias Hansson <tohans@kth.se>, Viola Söderlund <violaso@kth.se>
+ * Author: Tobias Hansson <tohanss@kth.se>, Viola Söderlund <violaso@kth.se>
  * 
- * Last updated: 2020-10-24
+ * Last updated: 2020-10-27
  */
 
 /**
