@@ -8,7 +8,7 @@
 #   Created: 2020-10-23
 #
 #   See: MARS Syscall Sheet (https://courses.missouristate.edu/KenVollmar/mars/Help/SyscallHelp.html)
-#   See: MIPS Instruction Sheet (file:///C:/Users/viola/Downloads/mips-ref-sheet-3.pdf)
+#   See: MIPS Instruction Sheet (https://canvas.kth.se/courses/20007/files/3004941/download?wrap=1)
 #
 ##################################################################
 

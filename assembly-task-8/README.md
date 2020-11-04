@@ -21,7 +21,7 @@ See `./examples` for MIPS code examples.
 
 ### Higher level => Lower level
 
-Learn what it means to be a compiler by translating C to MIPS assembly instructions. Your task is to write a file `./high-to-low/multiplication.asm`, which contains the same algorithm and logic as in `./high-to-low/multiplication.c`. To clarify: you may only use the `add` instruction, not `mul` (or similar).
+Learn what it means to be a compiler by translating C to MIPS assembly instructions. Your task is to write a file `./high-to-low/multiplication.asm`, which contains the same algorithms and logic as in `./high-to-low/multiplication.c`. To clarify: you may only use the `add` instruction, not `mul` (or similar).
 
 ### [Inbyggda System-mastern](https://www.kth.se/student/kurser/program/TEBSM/20212/arskurs1), här kommer jag!
 
@@ -37,14 +37,14 @@ For help with code setup, begin by reviewing the contents of `./sieve/template.a
 
 With reference to `./sieve/template.asm`,
 
-Know the answer of the following questions:
+Know the answer to the following questions:
 - Why do array declarations in fast languages, like Rust and C, require the given length to be of constant value?
-- Why are Rust string literals constant?
+- A single programming language can define strings in many different ways. For example, Rust has string literals and a String structure. What are the advantages of having both low- and high-level representations of strings? 
 
-#### Memory flow
+#### CPU optimisations
 
 Observe the following pieces of code:
-```assembly
+```
 main:
     #...
 
@@ -52,9 +52,9 @@ main:
     li $v0, 10                      # set system call code to "terminate program"
     syscall                         # terminate program
 
-#...
+    #...
 ```
-```assembly
+```
 main:
     #...
 
@@ -68,5 +68,5 @@ exit_program:
     # EOF
 ```
 
-Know the answer of the following question:
+Know the answer to the following question:
 - Which method of program termination is to prefer and why?
