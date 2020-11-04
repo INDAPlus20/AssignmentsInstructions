@@ -1,50 +1,37 @@
-Lösa två problem:
-
-    - multiplicera tal
-    - räkna fakultet
-
-
 Instruktioner är 8 bitar:
 
     Register type:
-        - add target source immidiate       // 000
+        - add target source immidiate:     
             - target = target + source + immidiate
 
-        - sub target source imidiate        // 001
+        - sub target source imidiate:      
             - target = target - source - immidiate
 
-        - set target source immidiate       // 010
+        - set target source immidiate:     
             - target = source + immidiate
+        
+        - jeq  r1 r2 immidiate:              
+            - Immidiate väljer om den ska hoppa eller inte, är det falskt gör den motsatta. 1 gör att den hoppar en rad
 
-            3 bitar op
-            2 bitar register1
-            2 bitar register1
-            1 bitar immidiate
+        3 bitar op
+        2 bitar register1
+        2 bitar register1
+        1 bitar immidiate
 
     Jump type:
-        - j address                         // 011
+        - j address:                       
             3 bitar op
             5 bitar relativ adress ska kunna vara negativ
             - jumps a relative amount of lines in the code
 
-    Compare type:
-        - jeq  r1 r2 avstånd                // 100
-            3 bitar op
-            2 bitar reg1
-            2 bitar reg2
-            1 bit avstånd:
-                0 => 0 rader
-                1 => 1 rad
-            - Immidiate väljer om den ska hoppa eller inte, är det falskt gör den motsatta.
-
     Special types:
-        - input:                            // 101
+        - input:                          
             - Kommandot input läser in ett tal till #1
 
-        - print                             // 110
+        - print                           
             - Kommandot print printar ett tal från #1
 
-        - exit                              // 111
+        - exit                            
             - terminate program.
 
 
