@@ -14,8 +14,7 @@ exit
 add #1 #2 0                 // Add 5 to #1 once
 sub #3 #0 1                 // subtract 1 from counter
 
-jeq #3 #0 1                 // Jump to end if counter reaches zero
+jeq #3 #0 1                 // skip jumping back to start if counter reaches zero
 j -5                        // Otherwise jump to start of loop
 
 print                       // print #1 to stdout
-exit                        // Jump to last line
