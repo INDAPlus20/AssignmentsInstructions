@@ -54,8 +54,8 @@ hello_world:                        # function main starts here
     nop
 
     # manage saved regitries
-    move    $ra, $s1                # restore return adress
     POP($s1)                        # restore parent routine's saved value from stack
+    move    $ra, $s1                # restore return adress
 
     # return
     jr      $ra                     # return to where main was called from
