@@ -32,9 +32,11 @@ main:
     li 	    $t0,1001                # $t0 = 1001
     slt	    $t1,$v0,$t0		        # $t1 = input < 1001
     beq     $t1,$zero,invalid_input # if !(input < 1001), jump to invalid_input
+    nop
     li	    $t0,1                   # $t0 = 1
     slt     $t1,$t0,$v0		        # $t1 = 1 < input
     beq     $t1,$zero,invalid_input # if !(1 < input), jump to invalid_input
+    nop
     
     # initialise primes array
     la	    $t0,primes              # $s1 = address of the first element in the array
