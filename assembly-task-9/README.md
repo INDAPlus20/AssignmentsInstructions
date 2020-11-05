@@ -17,7 +17,7 @@ Your language must be an 8-bit assembly language, meaning that your assembly ins
 
 Think carefully of how your instructions are encoded. More registries may mean a smaller instruction set or smaller immidiates. The above table is only an example for how you may divide your availiable bits.
 
-Your registries should be 32 bits in size, meaning values rangeing from 0 to 4,294,967,295 (unsigned) and −2,147,483,648 to 2,147,483,647 (signed).
+Your registries should be 32 bits in size, meaning values ranging from 0 to 4,294,967,295 (unsigned) and −2,147,483,648 to 2,147,483,647 (signed).
 
 Lastly, remember to give your language a killer name!!!
 
