@@ -15,7 +15,9 @@ Your language must be an 8-bit assembly language, meaning that your assembly ins
 | `imm` _(immidiate)_ | 1-5 bits immidiate values give room (at most) for the unsigned values 0-31 or the signed values (-16)-15. |
 | `label` _(jump address)_ | 4-6 bits jump address gives room for jumps (branching) of max 16-64 instructions (lines) per jump. Remember that jump chaining is tedious. |
 
-> Assistant's note: Think carefully of how your instructions are encoded. More registries may mean a smaller instruction set or smaller immidiates. The above table is only an example for how you may divide your availiable bits.
+Think carefully of how your instructions are encoded. More registries may mean a smaller instruction set or smaller immidiates. The above table is only an example for how you may divide your availiable bits.
+
+Your registries should be 32 bits in size, meaning values rangeing from 0 to 4,294,967,295 (unsigned) and −2,147,483,648 to 2,147,483,647 (signed).
 
 Lastly, remember to give your language a killer name!!!
 
