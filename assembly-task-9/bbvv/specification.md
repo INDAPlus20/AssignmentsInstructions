@@ -6,7 +6,7 @@
 |:---------|:-------------|
 | Register | `op<7:5>, rs<4:3>, rt<2:1>, imm<0>` |
 | Jump     | `op<7:5>, addr<4:0>` |
-| Special  | `op<7:5>, syscode<4:0>` |
+| Special  | `op<7:5>` |
 
 ### Register Instructions
 
