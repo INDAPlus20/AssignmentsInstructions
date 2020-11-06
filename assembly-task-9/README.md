@@ -12,10 +12,12 @@ Your language must be an 32-bit assembly language with 8-bit instructions. See t
 |----------|--------------------------|
 | `op` _(operation)_ | 2-3 bits operation code gives room for 4-8 instructions. |
 | `rs`/`rt`/`rd` _(registry)_ | 2 bits registry addresses gives room for 4 registries. |
-| `imm` _(immidiate)_ | 4-5 bits immidiate values gives room for 16-32 value unsigned constants or 8-16 value signed constants. |
-| `label` _(jump address)_ | 4-6 bits jump address gives room for jumps (branching) of max 16-64 instructions per jump. Remember that jump chaining is tedious. |
+| `imm` _(immidiate)_ | 1-5 bits immidiate values give room (at most) for the unsigned values 0-31 or the signed values (-16)-15. |
+| `label` _(jump address)_ | 4-6 bits jump address gives room for jumps (branching) of max 16-64 instructions (lines) per jump. Remember that jump chaining is tedious. |
 
-Think carefully of how your instructions are encoded. More registries may mean a smaller instruction set or shorter constants.
+Think carefully of how your instructions are encoded. More registries may mean a smaller instruction set or smaller immidiates. The above table is only an example for how you may divide your availiable bits.
+
+Your registries should be 32 bits in size, meaning values ranging from 0 to 4,294,967,295 (unsigned) and −2,147,483,648 to 2,147,483,647 (signed).
 
 Lastly, remember to give your language a killer name!!!
 
@@ -23,14 +25,14 @@ Lastly, remember to give your language a killer name!!!
 
 Summary:
 - Fulfill one of the assignment levels below.
-- Write a faculty calculator as described below.
+- Write a faculty calculator as described [below](#language-capabilities).
 
 ### Prepare Assignment
 
-1) Create a repository named `<KTH_ID>-assembly` under the `INDAPlus20` organisation and clone it.
+1) Create a repository named `<KTH_ID>-assembly` under the `INDAPlus20` organisation and clone it. (Or don't, looking at you `@haskellers`!)
 2) Navigate into your newly created repository and start writing.
 
-See `./bbvv` for an example language.
+See `./bbvv` for an example language and interpreter.
 
 ### Assignment Levels
 
