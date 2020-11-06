@@ -1,52 +1,42 @@
-Instruktioner är 8 bitar:
+# Bacon Borde Vara Vegetariskt Language Specification
 
-    Register type:
-        - add target source immidiate:     
-            - target = target + source + immidiate
+## Instructions
 
-        - sub target source imidiate:      
-            - target = target - source - immidiate
+| **Type** | **Encoding** |
+|:---------|:-------------|
+| Register | `op<7:5>, rt<4:3>, rs<2:1>, imm<0>` |
+| Jump     | `op<7:5>, addr<4:0>` |
+| Special  | `op<7:5>, syscode<4:0>` |
 
-        - set target source immidiate:     
-            - target = source + immidiate
-        
-        - jeq  r1 r2 immidiate:              
-            - Immidiate väljer om den ska hoppa eller inte, är det falskt gör den motsatta. 1 gör att den hoppar en rad
+### Register Instructions
 
-        3 bitar op
-        2 bitar register1
-        2 bitar register1
-        1 bitar immidiate
+| **Instruction** | **Description** |
+|:----------------|:----------------|
+| `add`           | `rt = rt + rs + imm` |
+| `sub`           | `rt = rt - rs - imm`  |
+| `set`           | `rt = rs + imm` |
+| `jeq`           | Jump one line if `(rt == rs && imm) || (rt != rs && !imm)`. |
 
-    Jump type:
-        - j address:                       
-            3 bitar op
-            5 bitar relativ adress ska kunna vara negativ
-            - jumps a relative amount of lines in the code
+### Jump Instructions
 
-    Special types:
-        - input:                          
-            - Kommandot input läser in ett tal till #1
+| **Instruction** | **Description** |
+|:----------------|:----------------|
+| `j`             | Jump `addr` lines. |
 
-        - print                           
-            - Kommandot print printar ett tal från #1
+### Special Instructions
 
-        - exit                            
-            - terminate program.
+| **Instruction** | **Description** |
+|:----------------|:----------------|
+| `input`         | Get integer value from standard input stream and store in `#1`. |
+| `print`         | Write the value of `#1` to the standard output stream. |
+| `exit`          | Terminate program. |
 
-
-Registers:
+## Registers
 
     There are four registers, all of which can hold 32 bits of 
-    data (integer) and they are annotated by a so called brädgård (#)
+    data (integers). They are annotated by a so called brädgård (#)
 
-    - #0                                    // Always contains 0
-    - #1                                    // Handles I/O
+    - #0    // always equals 0
+    - #1    // handles I/O
     - #2                                    
     - #3
-
-
-Immidiate värden:
-
-    - 0                                    // Add 0
-    - 1                                    // Add 1

@@ -39,7 +39,7 @@ See `./bbvv` for an example language and interpreter.
 Higher level equals more alpha!
 
 1) Copy the design of _Bacon Borde Vara Vegetariskt_ and implement an interpreter for the language in C, C++ or another low level language (excluding Rust).
-2) Implement an emulator to complement the already provided compiler for _Bacon Borde Vara Vegetariskt_ using C, C++, Rust or another low level language. See `./bbvv/bbvv-rust/README.md` for specifications.
+2) Implement an emulator to complement the already provided compiler for _Bacon Borde Vara Vegetariskt_ using C, C++, Rust or another low level language. See `./bbvv/rust-compiler/README.md` for specifications.
 3) Design your own language and implement an interpreter for your language in whatever programming language you want (excluding Python).
 4) Design your own language and write an compiler as well as an emulator (we don't have time to design and order custom chips) for your language/architecture in whatever programming language you want (excluding Python).
 

@@ -3,7 +3,8 @@
 # Generated files
 /*/target/
 /*/*/target/
-/*/*/*/target
+/*/*/*/target/
+/*/*/*/*/target/
 /*/*.exe
 /*/*/*.exe
 /*/*/*/*.exe
@@ -16,6 +17,7 @@ rust-task-7/
 /*/Cargo.lock
 /*/*/Cargo.lock
 /*/*/*/Cargo.lock
+/*/*/*/*/Cargo.lock
 
 ### Demos
 /demo.rs

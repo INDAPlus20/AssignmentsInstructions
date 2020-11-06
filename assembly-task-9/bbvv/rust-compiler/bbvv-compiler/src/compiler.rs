@@ -32,14 +32,10 @@ const R3: Registry = ['1','1'];
 /// Instruction types of the instruction set.
 #[derive(PartialEq)]
 enum InstructionType {
-    /// Type for the addition, subtraction and set instructions.
+    /// Type for the addition, subtraction, set and jump on equal instructions.
     Arithmetic, 
-    /// Type for the jump on equal instruction.
-    Compare, 
-    /// Type for the jump instruction.
+    /// Type for the jump and system call instructions.
     Jump, 
-    /// Type for the system call instruction.
-    SystemCall
 }
 
 /// Compile expression to an 8 bit instruction.
@@ -59,9 +55,7 @@ enum InstructionType {
 /// | **Type** | **Encoding** |
 /// |:---------|:-------------|
 /// | Arithmetic | `op<7:5>, rt<4:3>, rs<2:1>, imm<0>` |
-/// | Compare | `op<7:5>, rt<4:3>, rs<2:1>, imm<0>` |
 /// | Jump | `op<7:5>, addr<4:0>` |
-/// | System Call | `op<7:5>, syscode<4:0>` |
 pub fn run(expression: &str) -> Result<String, String> {
 
     let mut components = expression.split_whitespace();
@@ -78,7 +72,7 @@ pub fn run(expression: &str) -> Result<String, String> {
     };
 
     // parse target registry, source registry and immidiate value
-    if i_type == InstructionType::Arithmetic || i_type == InstructionType::Compare {
+    if i_type == InstructionType::Arithmetic {
         match get_rt_and_rs(components.next(), components.next(), components.next()) {
             Ok((_rs, _rt, _imm)) => {
                 instruction.extend_from_slice(&_rs);
@@ -91,7 +85,7 @@ pub fn run(expression: &str) -> Result<String, String> {
     };
 
     // parse jump address
-    if i_type == InstructionType::Jump || i_type == InstructionType::SystemCall {
+    if i_type == InstructionType::Jump {
         let err_msg = match i_type {
             InstructionType::Jump => "Invalid jump address.",
             _ => "Invalid system call code."
@@ -129,8 +123,8 @@ fn get_op_and_i_type(instr: Option<&str>) -> Result<(InstructionType, OperationC
         Some(ref _op) if _op == &"sub" => Ok((InstructionType::Arithmetic, SUB_OP)),
         Some(ref _op) if _op == &"set" => Ok((InstructionType::Arithmetic, SET_OP)),
         Some(ref _op) if _op == &"j" => Ok((InstructionType::Jump, J_OP)),
-        Some(ref _op) if _op == &"jeq" => Ok((InstructionType::Compare, JEQ_OP)),
-        Some(ref _op) if _op == &"cal" => Ok((InstructionType::SystemCall, CAL_OP)),
+        Some(ref _op) if _op == &"jeq" => Ok((InstructionType::Arithmetic, JEQ_OP)),
+        Some(ref _op) if _op == &"cal" => Ok((InstructionType::Jump, CAL_OP)),
         _ => return Err("Invalid operation.".to_string())
     }
 }
