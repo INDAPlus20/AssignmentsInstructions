@@ -14,20 +14,20 @@ const INSTRUCTION_LENGTH: usize = 8;
 const ADDR_LENGTH: usize = 5;
 
 /* Operation codes. */
-type OperationCode = [char; 3];
-const ADD_OP: OperationCode = ['0','0','0'];
-const SUB_OP: OperationCode = ['0','0','1'];
-const SET_OP: OperationCode = ['0','1','0'];
-const J_OP: OperationCode = ['0','1','1'];
-const JEQ_OP: OperationCode = ['1','0','0'];
-const CAL_OP: OperationCode = ['1','0','1'];
+type OperationCode = [bool; 3];
+const ADD_OP: OperationCode = [ false, false, false ];
+const SUB_OP: OperationCode = [ false, false, true ];
+const SET_OP: OperationCode = [ false, true, false ];
+const J_OP: OperationCode = [ false, true, true ];
+const JEQ_OP: OperationCode = [ true, false, false ];
+const CAL_OP: OperationCode = [ true, false, true ];
 
 /* Registry addresses. */
-type Registry = [char; 2];
-const R0: Registry = ['0','0'];
-const R1: Registry = ['0','1'];
-const R2: Registry = ['1','0'];
-const R3: Registry = ['1','1'];
+type Registry = [bool; 2];
+const R0: Registry = [ false, false ];
+const R1: Registry = [ false, true ];
+const R2: Registry = [ true, false ];
+const R3: Registry = [ true, true ];
 
 /// Instruction types of the instruction set.
 #[derive(PartialEq)]
@@ -56,11 +56,11 @@ enum InstructionType {
 /// |:---------|:-------------|
 /// | Arithmetic | `op<7:5>, rs<4:3>, rt<2:1>, imm<0>` |
 /// | Jump | `op<7:5>, addr<4:0>` |
-pub fn run(expression: &str) -> Result<String, String> {
+pub fn run(expression: &str) -> Result<u8, String> {
 
     let mut components = expression.split_whitespace();
 
-    let mut instruction: Vec<char> = Vec::with_capacity(INSTRUCTION_LENGTH);
+    let mut instruction: Vec<bool> = Vec::with_capacity(INSTRUCTION_LENGTH);
 
     // parse instruction type and operation code
     let i_type = match get_op_and_i_type(components.next()) {
@@ -77,8 +77,7 @@ pub fn run(expression: &str) -> Result<String, String> {
             Ok((_rs, _rt, _imm)) => {
                 instruction.extend_from_slice(&_rs);
                 instruction.extend_from_slice(&_rt);
-                // get bit 0 from immidiate value as character
-                instruction.push(std::char::from_digit(_imm % 2, 2).unwrap());
+                instruction.push(_imm);
             },
             Err(_msg) => return Err(_msg)
         }
@@ -100,9 +99,9 @@ pub fn run(expression: &str) -> Result<String, String> {
                             let comp = (2 as isize).pow(_i as u32);
                             instruction.push(if ___addr >= comp {
                                 ___addr -= comp;
-                                '1'
+                                true
                             } else {
-                                '0'
+                                false
                             });
                         }
                     },
@@ -113,7 +112,13 @@ pub fn run(expression: &str) -> Result<String, String> {
         }
     };
 
-    Ok(instruction.into_iter().collect())
+    // parse to u8
+    let mut exec_instr: u8 = 0;
+    for _i in 0..8 {
+        exec_instr += 2^(_i as u8);
+    }
+
+    Ok(exec_instr)
 }
 
 /// Parse operation and instruction type.
@@ -131,7 +136,7 @@ fn get_op_and_i_type(instr: Option<&str>) -> Result<(InstructionType, OperationC
 
 /// Parse target and source registry.
 fn get_rt_and_rs(rt: Option<&str>, rs: Option<&str>, imm: Option<&str>)
- -> Result<(Registry, Registry, u32), String> {
+ -> Result<(Registry, Registry, bool), String> {
     let _rt = get_r(rt);
     let _rs = get_r(rs);
 
@@ -142,8 +147,12 @@ fn get_rt_and_rs(rt: Option<&str>, rs: Option<&str>, imm: Option<&str>)
     } else if imm.is_none() {
         Err("Invalid immidiate value.".to_string())
     } else {
-        match imm.unwrap().parse::<u32>() {
-            Ok(_imm) => Ok((_rs.unwrap(), _rt.unwrap(), _imm)),
+        match imm.unwrap().parse::<usize>() {
+            Ok(_imm) => Ok((_rs.unwrap(), _rt.unwrap(), if _imm % 2 > 0 {
+                true
+            } else {
+                false
+            })),
             Err(_) => Err("Invalid immidiate value.".to_string())
         }
     }

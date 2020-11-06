@@ -25,7 +25,7 @@ Lastly, remember to give your language a killer name!!!
 
 Summary:
 - Fulfill one of the assignment levels below.
-- Write a faculty calculator as described [below](#language-capabilities).
+- Write a factorial calculator as described [below](#language-capabilities).
 
 ### Prepare Assignment
 
@@ -58,3 +58,7 @@ An interpretor reads a code file and run it instruction for instruction. A compi
 Your language has to have the instructions for you to write a program that takes an integer `n` as user input, then calculates and outputs the value `n!`.
 
 To prove your language's capabilities, write this program and include the file in your repository ready to be interpreted or compiled. In addition, include instructions of how to do this.
+
+### _NOTE_
+
+Your language are not allowed to fit multiplication of factorial logic in single instructions. Multiplication by gate logic (add, or, not, xor ...) and addition is allowed.

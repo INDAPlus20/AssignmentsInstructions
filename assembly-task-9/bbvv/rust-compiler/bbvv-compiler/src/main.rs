@@ -80,7 +80,7 @@ fn run_compiler() -> Result<(), ErrorKind> {
 
                 /* Compiles the define section - associates each keyword with an instruction. */
                 
-                let mut definitions: HashMap<String, String> = HashMap::new();
+                let mut definitions: HashMap<String, u8> = HashMap::new();
 
                 // register definitions
                 if define_section_start_i.is_some() {
@@ -132,13 +132,13 @@ fn run_compiler() -> Result<(), ErrorKind> {
                     None => 0
                 };
 
-                let mut executable: Vec<String> = Vec::new();
+                let mut executable: Vec<u8> = Vec::new();
 
                 // compile expressions
                 while curr_i < lines.len() {
                     if line_has_code(&lines[curr_i]) {
                         match definitions.get(lines[curr_i].split_whitespace().next().unwrap()) {
-                            Some(_instr) => executable.push(_instr.to_string()),
+                            Some(_instr) => executable.push(*_instr),
                             None => {
                                 match compiler::run(lines[curr_i].as_str()) {
                                     Ok(_instr) => executable.push( _instr),
@@ -161,7 +161,7 @@ fn run_compiler() -> Result<(), ErrorKind> {
                 // write executable to output file
                 match fs::OpenOptions::new().write(true).create(true).open(OUT_FILE_PATH) {
                     Ok(mut _file) => {
-                        match _file.write_all(executable.join("").as_bytes()) {
+                        match _file.write_all(&executable) {
                             Ok(()) => {
                                 println!("Done writing to output!\n\nExecutable code found at: \"{}\"\n--------------------------------------------", OUT_FILE_PATH);
                                 Ok(())
