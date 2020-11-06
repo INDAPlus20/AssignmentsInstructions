@@ -6,7 +6,7 @@ This week is the **last week** of this course! Therefore, make sure to go back a
 
 Time to face it, MIPS, especially MARS, is for plebs (cool plebs)! You, yes YOU, can surely do a better job than that! For this reason, show your programming alphaness by designing your own assembly language. 
 
-Your language must be an 8-bit assembly language, meaning that your assembly instructions has to be 8-bits long. See the [MIPS reference sheet](https://www.kth.se/social/files/563c63c9f276547044e8695f/mips-ref-sheet.pdf) and take inspiration from the MIPS 32-bit instruction encoding. Your instruction encoding determins:
+Your language must be an 32-bit assembly language with 8-bit instructions. See the [MIPS reference sheet](https://www.kth.se/social/files/563c63c9f276547044e8695f/mips-ref-sheet.pdf) and take inspiration from the MIPS 32-bit instruction encoding. Your instruction encoding determins:
 
 | **Code** | **Size and Flexibility** |
 |----------|--------------------------|
@@ -34,17 +34,18 @@ See `./bbvv` for an example language.
 
 ### Assignment Levels
 
-Higher lever equals more alpha!
+Higher level equals more alpha!
 
-1) Copy the design of _Bacon Borde Vara Vegetariskt_ and implement an interpreter for the language in C, C++, Rust or another low level language.
-2) Design your own language and implement an interpreter for your language in whatever programming language you want (excluding Python).
-3) Design your own language and write an compiler as well as an emulator (we don't have time to design and order custom chips) for your language/architecture in whatever programming language you want (excluding Python).
+1) Copy the design of _Bacon Borde Vara Vegetariskt_ and implement an interpreter for the language in C, C++ or another low level language (excluding Rust).
+2) Implement an emulator to complement the already provided compiler for _Bacon Borde Vara Vegetariskt_ using C, C++, Rust or another low level language. See `./bbvv/bbvv-rust/README.md` for specifications.
+3) Design your own language and implement an interpreter for your language in whatever programming language you want (excluding Python).
+4) Design your own language and write an compiler as well as an emulator (we don't have time to design and order custom chips) for your language/architecture in whatever programming language you want (excluding Python).
 
 For advanced implementations (only level 3), contenders for the most outrageous implementation, you are allowed to team up in pairs!
 
 An interpretor reads a code file and run it instruction for instruction. A compiler reads a code file and outputs a system specific executable file. An emulator reads an executable file and executes it by interpretation.
 
-**@Rustacians** Bonus points for whoever implements their solution using Rust! Tagga Rust!
+**@Rustacians** Good character points for whoever implements their solution using Rust! Tagga Rust!
 
 **@Haskellers** Automatic A grade for whoever implements their solution using Haskell. Also, you are a madman if so!
 
@@ -54,4 +55,4 @@ An interpretor reads a code file and run it instruction for instruction. A compi
 
 Your language has to have the instructions for you to write a program that takes an integer `n` as user input, then calculates and outputs the value `n!`.
 
-To prove your language's capabilities, write this program and include the file in your repository ready to be interpreted or compiled.
+To prove your language's capabilities, write this program and include the file in your repository ready to be interpreted or compiled. In addition, include instructions of how to do this.

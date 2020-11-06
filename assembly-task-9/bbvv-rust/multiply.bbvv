@@ -1,0 +1,29 @@
+.define
+
+input (cal 1)
+print (cal 2)
+exit (cal 3)
+
+.text
+
+input                       
+set #2 #1 0                 // #2 = input integer
+input                       
+set #3 #1 0                 // #3 = input integer, this is our loop counter.
+
+set #1 #0 0                 // #1 is now 0 
+
+jeq #2 #0 0                 // skip exit line if false
+exit
+
+jeq #3 #0 0                 // skip exit line if false
+exit
+
+add #1 #2 0                 // add input 1 to #1 once
+sub #3 #0 1                 // subtract 1 from counter
+
+jeq #3 #0 1                 // jump to end if counter reaches zero
+j -5                        // otherwise jump to start of loop
+
+print                       // print #1 to stdout
+exit                        // Jump to last line
