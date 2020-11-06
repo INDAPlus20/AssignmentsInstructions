@@ -54,7 +54,7 @@ enum InstructionType {
 /// ### Instruction Encoding
 /// | **Type** | **Encoding** |
 /// |:---------|:-------------|
-/// | Arithmetic | `op<7:5>, rt<4:3>, rs<2:1>, imm<0>` |
+/// | Arithmetic | `op<7:5>, rs<4:3>, rt<2:1>, imm<0>` |
 /// | Jump | `op<7:5>, addr<4:0>` |
 pub fn run(expression: &str) -> Result<String, String> {
 
