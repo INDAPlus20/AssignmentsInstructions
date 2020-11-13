@@ -115,7 +115,7 @@ pub fn run(expression: &str) -> Result<u8, String> {
     // parse to u8
     let mut exec_instr: u8 = 0;
     for _i in 0..8 {
-        exec_instr += 2^(_i as u8);
+        exec_instr += 2.pow(_i as u8);
     }
 
     Ok(exec_instr)
