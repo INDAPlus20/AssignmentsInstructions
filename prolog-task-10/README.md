@@ -1,4 +1,4 @@
-# DD1337 Week 7
+# DD1338 Week 10
 
 To kick _DD1338 Algiritmer och Datastrukturer_ off, let's write in a language that doesn't treat algorithms as a series of calculations, but as an iterative loop through a tree data structure -- hence algoritms and data structures.
 

@@ -11,6 +11,7 @@
 
 # Unfinished
 rust-task-7/
+sorting-task-10/
 
 # The library shouldn't decide about the exact versions of 
 # its dependencies, but let the downstream crate decide.
