@@ -19,10 +19,6 @@ append_el(X,[],[X]).
 append_el(X,[H|T],[H|Y]) :-
     append_el(X,T,Y).
 
-% Is true if constant equals the length of list
-length([],0).
-length([_|T],N) :- length(T,N1), N is N1+1.
-
 % Is true if element equalts the n:th element in list
 nth(N,L,E) :- nth(1,N,L,E).
 nth(N,N,[H|_],H).
