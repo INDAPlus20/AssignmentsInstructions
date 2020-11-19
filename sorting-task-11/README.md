@@ -63,6 +63,8 @@ right ← merge sort right
 return concatinate left and right
 ```
 
+>There is also a python example for cocktail sort in `./examples`.
+
 **Note**: You may implemet your solution using any language (this includes Python *_host_ psudokod *_host_ *_host_).
 
 ### Prepare Assignment
@@ -72,6 +74,16 @@ return concatinate left and right
 
 See `./sorting-visualisation` for an example implemetation.
 
+### Questions
+
+Know the answer to the following questions:
+- In the best case, bubble sort is better than quicksort. Why can this be confusing and which of the two algoritms are better, why?
+- A divide and conquer method for sorting lists can usually be sped up by using a more naive algorithm on smaller sublists, why?
+- Some sorting algorithms use extra space complexity to sort a list, is this bad?
+
+
 ### Grading
 
 Because your solution can be implemented using any language, write in a README file of how to build and run your application. If you're writing your solution using Rust, **_do not_** copy the example solution!
+
+> Haskell note: Please dont implement quicksort in like 3 lines, we know it can be done, its cool. But its not efficient.
