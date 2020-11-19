@@ -71,6 +71,13 @@ return concatinate left and right
 
 1) Create a repository named `<KTH_ID>-sorting` under the `INDAPlus20` organisation and clone it. (Or don't, looking at you `@haskellers`!)
 2) Navigate into your newly created repository and start writing.
+    - Implement the required sorting algorithms!
+    - Implement a sorting algorithm of your choice, the sillier the better!
+    - Write your unit tests!
+        - PS. Your test suite should work identically for all algorithms (unless they test time to run of course).
+    - Write your front-end for visualizing the sorting algorithm!
+
+> If you choose a language like Python or Java you should use their standard testing libraries such as pytest and JUnit. If you choose a language that doesn't really have a unit test library, just write your own functions and have them print to stdio or something
 
 See `./sorting-visualisation` for an example implemetation.
 
@@ -84,6 +91,6 @@ Know the answer to the following questions:
 
 ### Grading
 
-Because your solution can be implemented using any language, write in a README file of how to build and run your application. If you're writing your solution using Rust, **_do not_** copy the example solution!
+Because your solution can be implemented using any language, write in a README file of how to build and run your application (that includes how to run the unit tests and your frontend). If you're writing your solution using Rust, **_do not_** copy the example solution!
 
 > Haskell note: Please dont implement quicksort in like 3 lines, we know it can be done, its cool. But its not efficient.
