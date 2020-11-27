@@ -9,14 +9,14 @@ Haskell || Rust                     task-{2..7}
 C                                   task-7
 Assembler                           task-8              
 Interpreter                         task-9
-Minecraft Mod                       task-10            (GRP)
+Prolog                              task-10            (GRP)
 ```
 
 ### DD1338 Algoritmer och Datastrukturer:
 ```
-Make a game                         task-11             GRP
-Make a script to play said game     task-12             GRP
-Merge Sort                          task-13
+Sorting algorithm visualisation     task-11             GRP
+Make a game                         task-12             GRP
+Make a script to play said game     task-13
 Chat-bot                            task-14             GRP
 Language Week                       task-15
 Knowledge Transfer                  task-16 + task-17   GRP
