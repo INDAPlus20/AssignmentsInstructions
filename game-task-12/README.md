@@ -12,6 +12,7 @@ The game you are about to create must meet the following two requirements:
 The game itself can be anything that you want it to be, make something fun or creative, but remember that even something like Pong is good enough for a pass as long as you follow our requirements!
 
 > Tobias: There is no requirement on graphics. As long as we can _see_ the game it should be fine.
+
 > Viola: Although, graphics are better than ASCII xP
 
 ### Getting into groups
