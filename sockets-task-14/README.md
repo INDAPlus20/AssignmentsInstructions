@@ -23,7 +23,7 @@ I (Viola) touched up a very simple Rust server and a client binary. Check it out
 
 This week you can select between two plus-assignments or the regular assignment!
 
-### 1. Make a Chat client/server!
+### 1. Make a chat client and server!
 
 The main point of this week is to make a server and client that can communicate with each other using sockets. For this assignment, we want your server to support multiple clients, meaning that two (bonus assignment: or more) clients can connect and communicate with each other trough the server.
 
