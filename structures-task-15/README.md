@@ -2,7 +2,9 @@
 
 ## Data Structures
 
-You think you know lists, but you don't (or maybe you do, who knows?). Prove it.
+You think you know lists, but you don't (or maybe you do, who knows?). Prove it, in style.
+
+![Data Propaganda](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cs.dartmouth.edu%2F~tjp%2Fcs10%2Fbeautiful_code.jpg&f=1&nofb=1)
 
 ### Prepare for your assigment
 
