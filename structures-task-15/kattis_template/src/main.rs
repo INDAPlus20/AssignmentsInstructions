@@ -12,12 +12,18 @@ fn main() {
     // get standard input stream
     let input = io::stdin();
 
-    // get input lines as strings
+    // get input lines as iterative
     let mut lines = input
         .lock()
         .lines()
-        .map(|_line| _line.ok().unwrap())
-        .collect::<Vec<String>>();
+        .map(|_line| _line.ok().unwrap());
+    // and get one line at a time,
+    let next_line = lines.next().unwrap();
+    
+    // or loop all input lines,
+    for _line in input.lock().lines().map(|_line| _line.unwrap()) {
+        // ...
+    }
 
     // or read single line
     let mut line = String::new();
