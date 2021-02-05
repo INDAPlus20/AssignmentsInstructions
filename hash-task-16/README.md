@@ -57,3 +57,5 @@ _(optional fun)_:
 ### Hashmap
 
 The hashmap requirements are that your implementation has to be capable, in addition to serve as the buffer for your database, to dynamically resize its base arrays when nessesary. See regular task for basic guidance. Also, the one and only fabled Ric's lecture is recommended to, at the very least, scroll through. However, notice that dynamic memory allocation is not a reqirement of the regular task. Vectors and structures like ArrayLists can be of assistance for those who feel a great burden. 
+
+You are also required to implement your own hashing function!
