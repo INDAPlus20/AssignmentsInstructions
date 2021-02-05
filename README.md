@@ -18,8 +18,8 @@ Sorting algorithm visualisation     task-11             GRP
 Make a game                         task-12             GRP
 Make a script to play said game     task-13
 Sockets!                            task-14             GRP
-Language Week                       task-15
-Knowledge Transfer                  task-16 + task-17   GRP
+Data Structures                     task-15
+Databases                           task-16 + task-17   GRP
 Cryptography                        task-18
 ```
 
