@@ -30,6 +30,8 @@ This can be done in any language. However, the hashmaps you use **must** be of y
 
 ### DBMS
 
+***Required***
+
 The minimal feature requirements for your database system are:
 - insertion
 - deletion
@@ -46,7 +48,7 @@ The minimal requirements doesn't include the features of creating and deleting t
 
 Every modification of the database has to be saved long term. This is usually done by a file manager concurrently so that other parts of the database, like the query manager and query executor can run uninterupted. You may multithread your application, but this is far from nessecery at this scale! You have to simply maintain a CVS file (or simular) of your data store. This file can in term be read to restore the database at startup or application crash. 
 
-_(optional fun)_:
+***_(optional fun)_***:
 - Add additional data-definition features, like create a table/pool.
 - Add additional querying features, like projection by condition.
 - A database usually maintain a log which allows for backtracking in case of a bad query. Add a log and regret feature.
@@ -54,7 +56,7 @@ _(optional fun)_:
 - Networking. Usually a database is accessed through the web. 
   - Authentication. A token is often enough.
 
-### Hashmap
+### Hashmap Requirements
 
 The hashmap requirements are that your implementation has to be capable, in addition to serve as the buffer for your database, to dynamically resize its base arrays when nessesary. See regular task for basic guidance. Also, the one and only fabled Ric's lecture is recommended to, at the very least, scroll through. However, notice that dynamic memory allocation is not a reqirement of the regular task. Vectors and structures like ArrayLists can be of assistance for those who feel a great burden. 
 
