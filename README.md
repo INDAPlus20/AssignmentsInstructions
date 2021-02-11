@@ -19,7 +19,8 @@ Make a game                         task-12             GRP
 Make a script to play said game     task-13
 Sockets!                            task-14             GRP
 Data Structures                     task-15
-Databases                           task-16 + task-17   GRP
+Databases                           task-16 
+Dynprog                             task-17
 Cryptography                        task-18
 ```
 
