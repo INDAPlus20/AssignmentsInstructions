@@ -11,7 +11,7 @@ You think you're a good programmer eh? Well think again! If you havn't tried dyn
 1) Create a repository named `<KTH_ID>-task-17` (not haskellers).
 2) Clone your newly created repository and start coding. 
 
-To make your Kattis-experience easier, see `./Kattis_template/src/main.rs`. If you're mot all förmodan using Java, make use of [this utility class](https://open.Kattis.com/download/Kattio.java?1a0093=) to simplify input-output fast enough to satisfy the judge.
+To make your Kattis-experience easier, see `./kattis_template/src/main.rs`. If you're mot all förmodan using Java, make use of [this utility class](https://open.Kattis.com/download/Kattio.java?1a0093=) to simplify input-output fast enough to satisfy the judge.
 
 ## Assignment
 This week, like some other weeks, you may choose between two different assignments:
