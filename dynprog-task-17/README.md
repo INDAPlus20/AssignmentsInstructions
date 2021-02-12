@@ -24,7 +24,7 @@ The idea is that you will work with dynamic programming this week no matter whic
 ### ADK LAB2
 [Here](https://kth.instructure.com/courses/21037/assignments/124042) you will have access to preparatory questions for the lab. On the same page you will find "[Labblydelsen](https://kth.instructure.com/courses/21037/assignments/124028)", which is where you want to head to find the instructions for the lab istself.
 
-You will also find the link to the Kattis problem that you need to pass for this assignment. We have provided you with test cases and a big input file to test locally. This is the same input format as Kattis!
+You will also find the link to the [Kattis problem](https://kth.kattis.com/problems/kth.adk.spelling) that you need to pass for this assignment. We have provided you with test cases and a big input file to test locally. This is the same input format as Kattis!
 
 >*NOTE*: If testing with the big file, head to the end and after `#`, replace the letters with full words to get better results!
 
