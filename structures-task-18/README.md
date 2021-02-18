@@ -4,6 +4,7 @@
 Did you know that files are technically a data structure. MORE ADK!!!!
 
 Us after DD1338:
+
 ![](https://images-ext-2.discordapp.net/external/2Rs7TXoJ8cowULh0GOIIo89c9kNqNwNnI51nD4YtZpg/https/pics.me.me/thumb_algorithms-a1-machine-learning-data-structures-maths-what-is-64436671.png)
 
 ### Prepare for your assigment
