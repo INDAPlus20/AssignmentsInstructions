@@ -1,37 +1,61 @@
 # DD1338 Week 18
-
 ## Concordance
 
-Did you know that files are technically a data structure. 
+Did you know that files are technically a data structure. MORE ADK!!!!
 
-![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Foy8znwiq1b111.png&f=1&nofb=1)
+Us after DD1338:
+![](https://images-ext-2.discordapp.net/external/2Rs7TXoJ8cowULh0GOIIo89c9kNqNwNnI51nD4YtZpg/https/pics.me.me/thumb_algorithms-a1-machine-learning-data-structures-maths-what-is-64436671.png)
 
 ### Prepare for your assigment
 
-1) Create a repository named `<KTH_ID>-task-17` (not haskellers).
+1) Create a repository named `<KTH_ID>-task-18` (not haskellers).
 2) Clone your newly created repository and start coding. 
 
-To make your Kattis-experience easier, see `./kattis_template/src/main.rs`. If you're mot all förmodan using Java, make use of [this utility class](https://open.Kattis.com/download/Kattio.java?1a0093=) to simplify input-output fast enough to satisfy the judge.
-
 ## Assignment
-This week, like some other weeks, you may choose between two different assignments:
+This week, like last week, you may choose between two different assignments:
 
-- Solve LAB2 from _DD2350 Algoritmer, Datastrukturer och Komplexitet_
+- Solve LAB1 from _DD2350 Algoritmer, Datastrukturer och Komplexitet_ (We going backwards peeps)
 - (or easier) Solve an ADK exercise problem and some other Kattis problem.
 
-The idea is that you will work with dynamic programming this week no matter which assignment you choose. Of course, you can also do the regular Java assignment.
+Of course, you can also do the regular Java assignment.
 
-### ADK LAB2
-[Here](https://kth.instructure.com/courses/21037/assignments/124042) you will have access to preparatory questions for the lab. On the same page you will find "[Labblydelsen](https://kth.instructure.com/courses/21037/assignments/124028)", which is where you want to head to find the instructions for the lab istself.
+### ADK LAB1
+ADK can be quite stressful (as some of you might now know), but enjoyfull! We really recommend solving this, as it is a really fun assignment and it will help you in a few years :). 
 
-You will also find the link to the [Kattis problem](https://kth.kattis.com/problems/kth.adk.spelling) that you need to pass for this assignment. We have provided you with test cases and a big input file to test locally. This is the same input format as Kattis!
+#### Specification
+[Here](https://kth.instructure.com/courses/21037/assignments/124041) you will have access to preparatory questions for the lab. On the same page you will find "[Labblydelsen](https://kth.instructure.com/courses/21037/assignments/124027)", which is where you want to head to find the instructions for the lab istself.
 
->*NOTE*: If testing with the big file, head to the end and after `#`, replace the letters with full words to get better results!
+The main idea for this lab is that you want to find every occurence of a word inside a large text file, this is slow! So, instead we want to create smaller help files, our data structure, that lets us look up these words much faster. For the sake of this assignment, we will tell you what files you need!
 
-ADK can be quite stressful, but enjoyfull! We really recommend solving this, as it is a really fun assignment and it will help you in a few years :). 
+Korpus -> Token -> IndexFile(optional) -> MagicFile*
+
+* Korpus
+  * This file is the large text file, the full text file. Lab instructions tell you how to get this from AFS. One of you is going to have to take one for the team to get this file xD
+
+* Token
+  * This file is technically given to you. In the lab instructions you are given a link to a program called tokenizer.c, but this program can be quite finnicky and you dont want to end up running it just to have it output in UTF-8 instead of ISO-8859. Therefore you can find a download link to a valid version of this file [on my google drive!](https://drive.google.com/file/d/1-UNSRL605BRI90PIfMkZEZ6Y8CdTCtuM/view?usp=sharing) This file consists of every word in Korpus paired with the byte-index of that word. This list is sorted so that the words are first in alphabetical order, and then duplicate words are in order of appearance, as you can see below with the first 5 words in this text.
+    ```
+    a 10000368
+    a 10017347
+    a 10047993
+    a 10058693
+    a 10067117
+    ...
+    ```
+* IndexFile (optional)
+  * This file is simple so it can be skipped as long as you account for the change in your MagicFile (Having this file will be easier though!) All you want for this file is to not have duplicate words to make searching easier! The above words will instead look like this:
+    ```
+    a 10000368 10017347 10047993 10058693 10067117...
+    ```
+
+* MagicFile
+  * Why is it called MagicFile? Well i can't tell you that of course! That's a Secret (capital S). The IndexFile is still slow to look through linearly so we want to find a way to go to the "word" that we want in O(1) time. A word starting with `aaa` should be as easy to find as `zzz`. That is why we in this file want to figure out a way to decide the byte-index for a word depending on the letters in that word *Hint Hint*.
+
+
+#### Output
+Like in the ADK lab, we want you to be able to provide all occurences of a word to show that the code is fast enough. If you have implemented your datastructure correctly, it should be _almost_ instant to provide all the words. Its okay if you skip the part where you ask the user if they are OK with seeing more than 25 occurences.
 
 ### ADK exersice + Kattis
-
 If the above ADK problem is too difficult, we have provided you an alternative!
 
 - Solve at least three in total, where
@@ -43,10 +67,9 @@ If the above ADK problem is too difficult, we have provided you an alternative!
       - [Bond](https://open.kattis.com/problems/bond)
       - [Entertainment Box](https://open.kattis.com/problems/entertainmentbox)
 
-The first problem from the PDF is the easiest. There's plenty of Kattis problems to choose from. Feel free to solve muliple of them.
+
 
 ### Grading
-
-For the ADK problem, we only require your code to pass Kattis. Always include screenshots of Kattis to prove solution.
+For the ADK problem, we do NOT have kattis this week, but we do however have the Korpus and Token file, so all you need to do is provide information for how we are to create your IndexFile and/or MagicFile and then run your code. 
 
 If you decide to do any of the non-Kattis exercises from the Multiple Problems category, we require you to write tests to prove the validity of your code.
