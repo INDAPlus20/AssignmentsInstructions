@@ -1,5 +1,7 @@
 # DD1338 Week 18
 
+**NOTE: Work int progress peps!**
+
 ## Concordance
 
 Did you know that files are technically a data structure. 
