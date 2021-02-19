@@ -1,7 +1,5 @@
 # DD1338 Week 18
 
-**NOTE: Work int progress peps!**
-
 ## Concordance
 
 Did you know that files are technically a data structure. Some of you called for it, therefore MORE ADK!!!!
@@ -19,7 +17,7 @@ Us after DD1338:
 This week, like last week, you may choose between two different assignments:
 
 - Solve LAB1 from _DD2350 Algoritmer, Datastrukturer och Komplexitet_ (We going backwards peeps)
-- (or easier) Solve an ADK exercise problem and some other Kattis problem.
+- (or easier) Solve Kattis problems.
 
 Of course, you can also do the regular Java assignment.
 
