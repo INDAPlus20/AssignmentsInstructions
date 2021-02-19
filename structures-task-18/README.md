@@ -15,13 +15,11 @@ Us after DD1338:
 1) Create a repository named `<KTH_ID>-task-18` (not haskellers).
 2) Clone your newly created repository and start coding. 
 
-To make your Kattis-experience easier, see `./kattis_template/src/main.rs`. If you're mot all förmodan using Java, make use of [this utility class](https://open.Kattis.com/download/Kattio.java?1a0093=) to simplify input-output fast enough to satisfy the judge.
-
 ## Assignment
 This week, like last week, you may choose between two different assignments:
 
-- Solve LAB1 from _DD2350 Algoritmer, Datastrukturer och Komplexitet_. We going backwards peeps!
-- _(or easier)_ Solve Kattis problems.
+- Solve LAB1 from _DD2350 Algoritmer, Datastrukturer och Komplexitet_ (We going backwards peeps)
+- (or easier) Solve an ADK exercise problem and some other Kattis problem.
 
 Of course, you can also do the regular Java assignment.
 
@@ -31,7 +29,7 @@ ADK can be quite stressful (as some of you might now know), but enjoyfull! We re
 #### Specification
 [Here](https://kth.instructure.com/courses/21037/assignments/124041) you will have access to preparatory questions for the lab. On the same page you will find "[Labblydelsen](https://kth.instructure.com/courses/21037/assignments/124027)", which is where you want to head to find the instructions for the lab istself.
 
-The main idea for this lab is that you want to find every occurence of a word inside a large text file, which can be a slow process! To solve this, we want to create smaller help files, that lets us look up these words much faster. For the sake of this assignment, we will tell you what files you need.
+The main idea for this lab is that you want to find every occurence of a word inside a large text file, which is a slow process! Instead we want to create smaller help files, that lets us look up these words much faster. For the sake of this assignment, we will tell you what files you need!
 
 File relations:
 `Korpus -> Token -> IndexFile (optional) -> MagicFile*`
@@ -40,7 +38,7 @@ File relations:
   * This file is the large text file, the full text file. Lab instructions tell you how to get this from AFS. One of you is going to have to take one for the team to get this file xD
 
 * Token
-  * This file is technically given to you. In the lab instructions you are given a link to a program called tokenizer.c, but this program can be quite finnicky and you dont want to end up running it just to have it output in UTF-8 instead of ISO-8859. Therefore you can find a download link to a valid version of this file [on my (Tobbe's) drive](https://drive.google.com/file/d/1-UNSRL605BRI90PIfMkZEZ6Y8CdTCtuM/view?usp=sharing). This file consists of every word in Korpus paired with the byte-index of that word. This list is sorted so that the words are first in alphabetical order, and then duplicate words are in order of appearance, as you can see below with the first 5 words in this text.
+  * This file is technically given to you. In the lab instructions you are given a link to a program called tokenizer.c, but this program can be quite finnicky and you dont want to end up running it just to have it output in UTF-8 instead of ISO-8859. Therefore you can find a download link to a valid version of this file [on my google drive!](https://drive.google.com/file/d/1-UNSRL605BRI90PIfMkZEZ6Y8CdTCtuM/view?usp=sharing) This file consists of every word in Korpus paired with the byte-index of that word. This list is sorted so that the words are first in alphabetical order, and then duplicate words are in order of appearance, as you can see below with the first 5 words in this text.
     ```
     a 10000368
     a 10017347
@@ -49,7 +47,7 @@ File relations:
     a 10067117
     ...
     ```
-* IndexFile (optional)
+* _(optional)_ IndexFile
   * This file is simple so it can be skipped as long as you account for the change in your MagicFile (Having this file will be easier though!) All you want for this file is to not have duplicate words to make searching easier! The above words will instead look like this:
     ```
     a 10000368 10017347 10047993 10058693 10067117...
