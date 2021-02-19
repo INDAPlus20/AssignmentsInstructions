@@ -38,7 +38,7 @@ File relations:
   * This file is the large text file, the full text file. Lab instructions tell you how to get this from AFS. One of you is going to have to take one for the team to get this file xD
 
 * Token
-  * This file is technically given to you. In the lab instructions you are given a link to a program called tokenizer.c, but this program can be quite finnicky and you dont want to end up running it just to have it output in UTF-8 instead of ISO-8859. Therefore you can find a download link to a valid version of this file [on my google drive!](https://drive.google.com/file/d/1-UNSRL605BRI90PIfMkZEZ6Y8CdTCtuM/view?usp=sharing) This file consists of every word in Korpus paired with the byte-index of that word. This list is sorted so that the words are first in alphabetical order, and then duplicate words are in order of appearance, as you can see below with the first 5 words in this text.
+  * This file is given to you. Unzip `token.zip` to find `token.txt`. This file consists of every word in Korpus paired with the byte-index of that word. This list is sorted so that the words are first in alphabetical order, and then duplicate words are in order of appearance, as you can see below with the first 5 words in this text.
     ```
     a 10000368
     a 10017347
