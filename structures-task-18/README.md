@@ -45,12 +45,13 @@ File relations:
     a 10047993
     a 10058693
     a 10067117
-    ...
+    [...]
+    EOF
     ```
 * _(optional)_ IndexFile
   * This file is simple so it can be skipped as long as you account for the change in your MagicFile (Having this file will be easier though!) All you want for this file is to not have duplicate words to make searching easier! The above words will instead look like this:
     ```
-    a 10000368 10017347 10047993 10058693 10067117...
+    a 10000368 10017347 10047993 10058693 10067117 [...] \n
     ```
 
 * MagicFile
