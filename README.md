@@ -8,23 +8,24 @@ This repo is for storing plus group assignments that we can use in the INDA cour
 Haskell || Rust                     task-{2..7}
 C                                   task-7
 Assembler                           task-8              
-Interpreter                         task-9
-Prolog                              task-10            (GRP)
+Interpreter                         task-9              GRP
+Prolog                              task-10
 ```
 
 ### DD1338 Algoritmer och Datastrukturer:
 ```
-Sorting algorithm visualisation     task-11             GRP
+Sorting algorithm visualisation     task-11
 Make a game                         task-12             GRP
 Make a script to play said game     task-13
-Sockets!                            task-14             GRP
+Sockets!                            task-14
 Data Structures                     task-15
 Databases                           task-16 
 Dynprog                             task-17
-Cryptography                        task-18
+String Data Structures              task-18
+Quicksort                           task-19
 ```
 
-### VT-2021 Suggestions
+### HT-2021 Suggestions
 ```
 Raytracer
 Prolog interpreter
