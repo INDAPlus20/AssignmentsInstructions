@@ -69,7 +69,7 @@ Writing project specs is a good practice to follow, however, thats not only why 
 The report should be in `.md` or `.pdf` format (LaTeX anyone?) and placed in your repo. It should contain the following:
 
 * Any links to the repo (yes, recursion) or Trello if that is used
-* Your specification should specify what naming convenction you will use for both:
+* Your specification should specify what naming convencion you will use for both:
     * Issues & Commits
       * Issues (and commit messages) are (by github standard) in future tense, i.e `"Fix this bug"` not `"Fixed this bug"` and can be named however you like, as long as they describe the issue itself. Recommended is short titles with a more elaborate description.
     * PR's
@@ -96,7 +96,7 @@ The rest explains itself. Motivate why your project is advanced enough!
 ### Use the Issue tracker!
 For every feature you want to create (or bug to fix), there should be an associated issue, hopefully the next few paragraphs will explain why.
 
-  * Follow your naming convenction. Assign assignees and attach labels, it looks cool! 
+  * Follow your naming convention. Assign assignees and attach labels, it looks cool! 
     * **Do not** forget to add issues to milestones, this can be done under the menu for each issue. 
   * Read on about branches to know how to close an issue the good way!
 
