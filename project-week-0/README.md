@@ -132,4 +132,5 @@ To keep an overview of your project, you should use one of these services (descr
 Most student groups create games, but here are some ideas you could try!
 
 * Generate captcha images!
+
 ![Idea1](https://media.discordapp.net/attachments/683743508888420383/824769079554342972/FB_IMG_1613350138811.jpg)
