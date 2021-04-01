@@ -36,7 +36,7 @@ Coffee brewer example:
 
 A larger project measure its progress in stories/epics after each business requirement. An epic contains multible milestones with submilestones representing each system requirement. Further, each milestone has several associating issues representing functional requirements.
 
-Treat your short project description as your set of business requirements, your milestones as your business requirements and your issues as functional requirements. Even bug issues belongs to a milestone.
+Treat your short project description as your set of business requirements, your milestones as your system requirements and your issues as functional requirements. Even bug issues belongs to a milestone.
 
 ## In Case You Need To Pivot:
 
