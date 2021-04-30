@@ -9,11 +9,7 @@ In just three weeks, on the 21:st, you are expected to present a complete projec
 
 ![](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fblog.capterra.com%2Fwp-content%2Fuploads%2F2015%2F12%2Fdt130621-720x225.gif&f=1&nofb=1)
 
-_Success:_
-
-![](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fhzc2p89grjm21.jpg&f=1&nofb=1)
-
-See the other weeks for directions.
+See the other weeks for directions. [_What bad planning looks like._](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.redd.it%2Fhzc2p89grjm21.jpg&f=1&nofb=1)
 
 **Good Luck!**
 
