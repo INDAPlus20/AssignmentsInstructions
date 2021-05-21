@@ -2,5 +2,3 @@ Generate documentation with `cargo doc`. See your newly generated web documentat
 You can also run `cargo doc --open` to do both in one step.
 
 Run documentation tests with `cargo test`.
-
-Note: Web documentations can only be generated for single files or library crates, not binary crates.
