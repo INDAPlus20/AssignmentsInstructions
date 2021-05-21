@@ -25,12 +25,12 @@ String Data Structures              task-18
 Quicksort                           task-19
 ```
 
-### DD1396 Parallellprogrammering
+### DD1396 Parallellprogrammering i Introduktion till Datalogi:
 ```
 All regular tasks in one swoop      task-20
 ```
 
-### DD1349 Mjukvaruproject i Introduktion till Datalogi
+### DD1349 Mjukvaruproject i Introduktion till Datalogi:
 ```
 Define project idea                 week-0
 Define requirements                 week-1
