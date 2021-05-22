@@ -10,7 +10,7 @@
 
 ### Prepare for your assigment
 
-Your first assignment are turned in by uploading it to a repository named `<KTH_ID>-task-2` under the `INDAPlus20` organisation. Be careful to get the spelling right.
+Your first assignment is submitted by uploading it to a repository named `<KTH_ID>-task-2` under the `INDAPlus20` organisation. Be careful to get the spelling right.
 
 The grade to an assigment is left in the form of an issue with "Pass", "Komplettering", or "Fail" in the title. In case of "Komplettering", read the instructions on what to adjust down in the issue description. Leave a comment on the issue upon reupload of the assignment. "Pass" and "Fail" are self explanatory. 
 
@@ -32,11 +32,11 @@ The grade to an assigment is left in the form of an issue with "Pass", "Komplett
 Your clean build looks like:
 ```
 appropriate_name
-|- Cargo.lock
-|- Cargo.toml
 |- src
   |- main.rs
 |- target
+|- Cargo.lock
+|- Cargo.toml
 ```
 
 Write your source code in `src`, where the `main` function is located in `src/main.rs`. To make it easier, begin by copying the contents of `./kattis_template/src/main.rs` into your `main.rs` file.
@@ -45,7 +45,7 @@ Write your source code in `src`, where the `main` function is located in `src/ma
 
 ### Kattis problems
 
-This week, you're going to learn the basics of Rust by solving [Kattis](https://kth.kattis.com) problems. For each problem, create one Rust crate in `<KTH_ID>-task-2`. Include a screenshot of your Kattis submission to prove solution. See `./minimal_scalar_product` for a Kattis solution example.
+This week you're going to learn the basics of Rust by solving [Kattis](https://kth.kattis.com) problems. For each problem, create one Rust crate in `<KTH_ID>-task-2`. Include a screenshot of your Kattis submission to prove solution. See `./minimal_scalar_product` for a Kattis solution example.
 
 Solve at least two of the following problems:
 - [Summera tal](https://kth.kattis.com/problems/kth.javap.sumsort)
@@ -77,7 +77,7 @@ let mut lines = input
     .lines()
     .map(|_line| _line.ok().unwrap().to_string());
 
-// for every line, assuming input strings with the characters '0' and '1' seperated by whitelines
+// for every line, assume input strings with the characters '0' and '1' seperated by whitelines
 
 let binary_line = lines
     .next().unwrap()
